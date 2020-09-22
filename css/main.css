@@ -1,0 +1,17 @@
+:root {
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-accent:;
+
+  --color-gold: #f9f5e5;
+  --color-rosa: #f7ddd9;
+  --color-glamour: #591f29;
+
+  --h1: rgb(230,230,230);
+  --h2: rgb(240,240,240);
+  --p: rgb(250,250,250);
+
+  --h1b: #505050;
+  --h2b: #303030;
+  --p: #121212;
+}
