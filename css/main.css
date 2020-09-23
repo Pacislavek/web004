@@ -2,8 +2,8 @@
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'GFS Didot', serif;
 
-  --color-primary: rgb(235,235,235);
-  --color-secondary: rgb(245,245,245);
+  --color-primary: rgb(245,245,245);
+  --color-secondary: rgb(235,235,235);
 
   --color-azure: #ECF8F8;
   --color-isabeline: #EEE4E1;
@@ -75,6 +75,14 @@ p,
 .p-black {
   color: var(--pb);
   font-family: var(--font-primary);
+}
+
+button:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
 }
 
 /* NAVBAR */
@@ -189,16 +197,15 @@ p,
 
 /* ABOUT */
 #about {
-  min-height: 100vh;
+  padding-bottom: 3rem;
   background-color: var(--color-secondary);
-  box-shadow: inset 0px 2px 21px rgba(0, 0, 0, 0.1);
 }
 
 .about-left-card {
   position: absolute;
   z-index: 1;
-  background-color: var(--color-azure);
-  border-radius: 8px;
+  background-color: var(--color-primary);
+  border-radius: 4px;
 }
 
 .about-text-wrapper {
@@ -219,8 +226,8 @@ p,
   position: relative;
   display: flex;
   filter: saturate(0.54) drop-shadow(0px 0px 24px rgba(0,0,0,0.15));
-  border: 0px solid var(--color-azure);
-  border-radius: 8px;
+  border: 0px solid var(--color-primary);
+  border-radius: 4px;
 }
 
 .about-button {
@@ -239,13 +246,85 @@ p,
 }
 
 .about-us-letter {
-  background-color: var(--color-azure);
+  background-color: var(--color-primary);
   border-radius: 12px;
   filter: drop-shadow(0px 0px 24px rgba(0,0,0,0.15));
   padding: 1.5rem 2rem;
 }
 
 .letter-title {
-  font-size: 38px;
+  font-size: 31px;
   font-weight: 300;
+}
+
+.letter-title i {
+  font-size: 24px;
+}
+
+#about .card-header {
+  padding: 0;
+  background-color: var(--color-primary);
+  filter: drop-shadow(0px 0px 24px rgba(0,0,0,0.15));
+}
+
+#about .card-body {
+  padding: 1px 0;
+}
+
+.letter-adv {
+  text-align: center;
+}
+
+/* SERVICES */
+
+#services {
+  background-color: var(--color-secondary);
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service {
+  background-color: var(--color-primary);
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.1));
+}
+
+.service:nth-child(odd) {
+    margin-right: 3rem;
+}
+
+.service-img {
+  width: 100%;
+}
+
+.service-text-wrapper {
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-title {
+  text-align: center;
+}
+
+.service-desc {
+  text-align: center;
+}
+
+.service-button {
+  border: none;
+  padding: 8px 12px;
+  background: transparent;
+  color: darkred;
+  font-weight: 500;
+  text-decoration: underline;
 }
