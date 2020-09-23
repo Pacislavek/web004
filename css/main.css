@@ -389,6 +389,44 @@ button:focus {
   width: 100%;
 }
 
-.promotion-title {
+.promotions-title {
   font-size: 3em;
+}
+
+.promotion-title {}
+
+.promotion-card {
+  background-color: var(--color-azure);
+  padding: 2rem 3rem 2rem 3rem !important;
+}
+
+.promotion-offer-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.promotion-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-right: 5%;
+  width: 15%;
+}
+
+.promotion-price-wrapper .promotion-price-muted {
+  margin: 0 0;
+  color: rgba(0,0,0,0.6);
+  text-decoration: line-through;
+}
+
+.promotion-price-wrapper .promotion-price {
+  color: darkred;
+  font-weight: 500;
+}
+
+.promotion-desc {
+  width: 100%;
 }
