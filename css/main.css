@@ -471,7 +471,7 @@ button:focus {
 }
 
 .video-title {
-  font-family: var(--poppins);
+  font-family: var(--font-secondary);
 }
 
 #offer {
@@ -479,3 +479,9 @@ button:focus {
   position: relative;
 }
 
+/* TEAM */
+
+#team {
+  min-height: 50vh;
+  background-color: var(--color-isabeline);
+}
