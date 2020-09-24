@@ -430,3 +430,52 @@ button:focus {
 .promotion-desc {
   width: 100%;
 }
+
+#offerVideo {
+  position: relative;
+  background-color: black;
+  height: 36vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#offerVideo video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 50%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#offerVideo .container {
+  position: relative;
+  z-index: 2;
+}
+
+#offerVideo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.55;
+  z-index: 1;
+}
+
+.video-title {
+  font-family: var(--poppins);
+}
+
+#offer {
+  min-height: 80vh;
+  position: relative;
+}
+
